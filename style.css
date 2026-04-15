@@ -4,8 +4,8 @@
     flex-flow: row wrap;
     border: solid black;
     width: 1000px;
-    height: 1000px;
     
+    align-content: flex-start;
     padding: 0px;
     
     
@@ -17,6 +17,7 @@
     border: 1px solid black;
     margin: 0px;
     flex: 1 1 auto;
+    
 
 }
 
