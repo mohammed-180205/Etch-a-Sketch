@@ -4,7 +4,19 @@ for(let i = 1; i <= 256; i++){
 let square = document.createElement("div");
 square.classList.add("square");
 container.appendChild(square);
-square.addEventListener("mouseenter", ()=> {square.style.backgroundColor = "black"});
+square.addEventListener("mouseenter", ()=> {
+    function red(){
+        return Math.floor(Math.random() * 256);
+    }
+    function green(){
+        return Math.floor(Math.random() * 256);
+    }
+    function blue(){
+        return Math.floor(Math.random() * 256);
+    }
+
+square.style.backgroundColor = `rgb(${red()}, ${green()}, ${blue()})`;
+});
 
 }
 
@@ -24,7 +36,19 @@ userSquare.style.width = userSquareWidth;
 userSquare.style.height = userSquareWidth;
 userSquare.classList.add("userSquare");
 container.appendChild(userSquare);
-userSquare.addEventListener("mouseenter", ()=> {userSquare.style.backgroundColor = "black"});
+userSquare.addEventListener("mouseenter", ()=> {
+    function red(){
+        return Math.floor(Math.random() * 256);
+    }
+    function green(){
+        return Math.floor(Math.random() * 256);
+    }
+    function blue(){
+        return Math.floor(Math.random() * 256);
+    }
+
+userSquare.style.backgroundColor = `rgb(${red()}, ${green()}, ${blue()})`;
+});
 
 }
 
